@@ -12,38 +12,38 @@
         <header id="header">Weather Dashboard</header>
     </nav>  
 
-    <div class="container col-sm-3">
+    <div class="container1 col-sm-3">
         <div id="citySearch">
             <p>Search for a city:</p>
             <label for="">
-                <input type="text" class="input-box">
+                <input type="text" id="cityInput" class="input-box">
             </label>
-            <button type="button" class="btn btn-info">
+            <button type="submit" id="searchBtn" class="btn-info">
                 <span class="glyphicon glyphicon-search"></span> Search
             </button>
+            <div class="searchHistoryButtons"></div>
         </div>
 
-        <div class="btn-group-vertical">
-            <button type="button" class="btn" id= "cityBtn">Austin</button>
-            <button type="button" class="btn" id= "cityBtn">Seattle</button>
-            <button type="button" class="btn" id= "cityBtn">Los Angeles</button>
-            <button type="button" class="btn" id= "cityBtn">New York</button>
-            <button type="button" class="btn" id= "cityBtn">San Francisco</button>
-            <button type="button" class="btn" id= "cityBtn">Chicago</button>
-            <button type="button" class="btn" id= "cityBtn">Denver</button>
-            <button type="button" class="btn" id= "cityBtn">Atlanta</button>
-            
-        </div>
+         <ul class="history btn-group-vertical"></ul> 
     </div>  
 
-    <div class="container-2 col-sm-8">WEATHER DATA GOES HERE</div>
+    <div id="weatherDiv" class="container col-sm-8">
 
+        <div class="city"></div>
+        <span id="icon"><img id="weatherIcon" src=""></span>
+        <div class="temp"></div>
+        <div class="humidity"></div>
+        <div class="wind-speed"></div>
+        <div class="uv-index"></div>
 
+    </div>
 
+    <div class="fiveDay container-3 grid col-sm-8"></div>
 
     
      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
